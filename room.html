@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL ELEON</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="data:image/png;base64,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" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">HOTEL ELEON</h1>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <p class="mb-0">+012 345 6789</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                                <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="" href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">HOTEL ELEON</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="room.html" class="nav-item nav-link active">Rooms</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="booking.html" class="dropdown-item">Booking</a>
+                                        <a href="team.html" class="dropdown-item">Our Team</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                            <a href="https://youtu.be/-MThdlVXsf8?si=sKf3mALyb3EOHYB2" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">HOTEL SHOWCASE<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Rooms</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Rooms</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Booking Start -->
+        <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="bg-white shadow" style="padding: 35px;">
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+                                <div class="col-md-3">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="date" id="date2" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Adult</option>
+                                        <option value="1">Adult 1</option>
+                                        <option value="2">Adult 2</option>
+                                        <option value="3">Adult 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Child</option>
+                                        <option value="1">Child 1</option>
+                                        <option value="2">Child 2</option>
+                                        <option value="3">Child 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking End -->
+
+
+        <!-- Room Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-1.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Junior Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-2.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-3.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Super Deluxe</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-3.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Super Deluxe</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-1.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Junior Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/room-2.jpg" alt="">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Room End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel py-5">
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="https://e1.pxfuel.com/desktop-wallpaper/620/986/desktop-wallpaper-cool-fortnite-pfp-fn-pfp-thumbnail.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">uzumakinu2122</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="https://media.licdn.com/dms/image/C5603AQGemOiWP4tihg/profile-displayphoto-shrink_800_800/0/1597665515483?e=2147483647&v=beta&t=8HN0e8ABT1-jjl2cbfLw32LICjkC7l7JaqmL0Fqx4x4" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">kanaeva811</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="https://i1.sndcdn.com/artworks-ZK3jbxEBa5Nf9BDE-1Qp9Sw-t500x500.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">niudateam</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Newsletter Start -->
+        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="border rounded text-center p-1">
+                        <div class="bg-white rounded text-center p-5">
+                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter Start -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-primary rounded p-4">
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">HOTEL ELEON</h1></a>
+                            <p class="text-white mb-0">
+								Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
+							</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                                <a class="btn btn-link" href="">About Us</a>
+                                <a class="btn btn-link" href="">Contact Us</a>
+                                <a class="btn btn-link" href="">Privacy Policy</a>
+                                <a class="btn btn-link" href="">Terms & Condition</a>
+                                <a class="btn btn-link" href="">Support</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                                <a class="btn btn-link" href="">Food & Restaurant</a>
+                                <a class="btn btn-link" href="">Spa & Fitness</a>
+                                <a class="btn btn-link" href="">Sports & Gaming</a>
+                                <a class="btn btn-link" href="">Event & Party</a>
+                                <a class="btn btn-link" href="">GYM & Yoga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
